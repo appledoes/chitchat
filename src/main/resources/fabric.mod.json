@@ -2,27 +2,30 @@
   "schemaVersion": 1,
   "id": "chitchat",
   "version": "${version}",
+
   "name": "Chitchat",
   "description": "Additions to vanilla chat.",
-  "authors": [],
+  "authors": [
+    "alexander"
+  ],
   "contact": {},
+
   "license": "GPL-3.0",
   "icon": "assets/chitchat/icon.png",
+
   "environment": "server",
   "entrypoints": {
-    "client": [
-      "net.smpruski.chitchat.chitchat.client.ChitchatClient"
-    ],
     "main": [
-      "net.smpruski.chitchat.chitchat.Chitchat"
+      "net.smpruski.chitchat.Chitchat"
     ]
   },
   "mixins": [
     "chitchat.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.11.6",
+    "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.17.1"
+    "minecraft": "1.17.x",
+    "java": ">=16"
   }
 }
